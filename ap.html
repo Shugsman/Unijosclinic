@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>UJ CLINIC</title>
+   <link href="sty.css" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+   
+   <link href="css/style.css" rel="stylesheet" />
+   
+   <link href="css/responsive.css" rel="stylesheet" />
+   
+</head>
+<body>
+   <div class="hero_area">
+      <header class="header_section">
+         <div class="container-fluid">
+           <nav class="navbar navbar-expand-lg custom_nav-container ">
+             <a class="navbar-brand" href="index.html">
+               <span>
+                <strong> UJ CLINIC</strong>
+               </span>
+             </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+   
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                 <ul class="navbar-nav  ">
+                   <li class="nav-item ">
+                     <a class="nav-link" href="index.html">Home</a>
+                   </li>
+                   <li class="nav-item ">
+                     <a class="nav-link" href="ap.html"> Appointments </a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="about.html"> About us </a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="./login.html"> Login</a>
+                   </li>
+                 </ul>
+                 <div class="user_option">
+                   <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                     <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                   </form>
+                 </div>
+               </div>
+             </div>
+           </nav>
+         </div>
+       </header>
+      <div id="form">
+         <div class="container">
+      
+            <section class="booking-form">
+                <h2>Kindly Book Your Appointment Here</h2>
+                <form id="appointment-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+      
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+      
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+      
+                    <label for="appointment-type">Appointment Type:</label>
+                    <select id="appointment-type" name="appointment-type" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="acute">Acute Illness</option>
+                        <option value="routine">Routine Care</option>
+                    </select>
+      
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+      
+                    <button type="submit">Book Appointment</button>
+                </form>
+                <div id="success-message" class="hidden">Appointment booked successfully!</div>
+            </section>
+        </div>
+      
+      </div>
+   </div>
+  <script src="app.js"></script>
+</body>
+</html>
